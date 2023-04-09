@@ -1,56 +1,76 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
 body {
-    background: #2d2d2d;
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+}
+
+.container {
+	display: flex;
+	flex-direction: row;
+	height: 100vh;
+}
+main {
+	display: flex;
+	flex-direction: row;
+	flex: 1;
 }
 
 aside {
-    float: left;
-    background: #181818;
-    width: 20%;
-    padding: 2.5%;
-    height: 100vh;
-    color: #fff;
-    border-right: 5px solid #4d4d4d;
+	display: flex;
+	float: left;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+
+	max-width: 400px;
+	background: linear-gradient(180deg, #56B4D3, #348F50);
 }
 
 aside img {
-    width: 100px;
-    float: left;
+	margin-top: 65px;
+	margin-bottom: 15px;
+	width: 250px;
 }
 
-aside .logo {
-    font-size: 27px;
-    font-weight: bold;
-    position: relative;
-    top: 35px;
-    left: 15px;
+a {
+	display: block;
+	margin: 3px;
+	width: 300px;
+	height: 55px;
+	padding: 15px 30px;
+	border: none;
+	border-radius: 5px;
+	background-color: transparent;
+	color: #FFF;
+	
+	text-align: left;
+	line-height: 20px;
+	font-size: 24px;
+	font-family: 'Montserrat', sans-serif;
+
+	cursor: pointer;
+	transition: background-color 0.3s ease-in-out;
+	transition: color 0.3s ease-in-out;
+	text-decoration: none;
 }
 
-aside h3 {
-    font-size: 30px;
-    margin-top: 150px;
-}
-
-aside ul {list-style: none}
-aside ul li {
-    color: #fff;
-    display: block;
-    margin-top: 20px;
-    transition: transform .6s ease;
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	margin-top: 65px;
+	margin-left: 130px;
+	text-align: center;
 }
 
 aside ul li:hover, aside ul a:hover {
-    color: #eb5959;
+    color: #404040;
     text-decoration: none;
     transform: scale(1.05);
 }
 
-main .features, main .features2, news .features {
-    float: left;
-    color: #fff;
-    margin-top: 100px;
-    text-align: center;
-    width: 75%;
+aside ul li {
+	transition: transform .4s ease;
 }
-
-
-

@@ -16,7 +16,7 @@
         <div class="form-container sign-up-container">
             <form method="post">
                 {% csrf_token %}
-                <h1>Create Account</h1>
+                <h1>Создать аккаунт</h1>
                 <input type="text" placeholder="Name" name="username"/>
                 <input type="password" placeholder="Password" name="password1"/>
                 <input type="password" placeholder="Password" name="password2"/>
@@ -26,7 +26,7 @@
         <div class="form-container sign-in-container">
             <form method="post">
                 {% csrf_token %}
-                <h1>Sign in</h1>
+                <h1>Войти в аккаунт</h1>
                 <input type="Name" placeholder="Name" name="username"/>
                 <input type="password" placeholder="Password" name="password"/>
                 <button type="submit">Sign In</button>
@@ -35,13 +35,13 @@
         <div class="overlay-container">
             <div class="overlay">
                 <div class="overlay-panel overlay-left">
-                    <h1>Welcome Back!</h1>
-                    <p>To keep connected with us please login with your personal info</p>
+                    <h2>С возвращением!</h2>
+                    <p>Чтобы продолжить работу, пожалуйста, войдите, используя свои личные данные.</p>
                     <button class="ghost" id="signIn">Sign In</button>
                 </div>
                 <div class="overlay-panel overlay-right">
-                    <h1>Hello, Friend!</h1>
-                    <p>Enter your personal details and start journey with us</p>
+                    <h2>Привет!</h2>
+                    <p>Введите свои личные данные и начните пользоваться нашим сайтом.</p>
                     <button class="ghost" id="signUp">Sign Up</button>
                 </div>
             </div>
