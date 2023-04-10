@@ -1,0 +1,108 @@
+html, body {
+    height: 100%;
+}
+
+aside {
+    float: left;
+    background: #181818;
+    width: 20%;
+    padding: 2.5%;
+    height: 100vh;
+    color: #fff;
+    border-right: 5px solid #4d4d4d;
+}
+
+aside img {
+    width: 100px;
+    float: left;
+}
+
+aside .logo {
+    font-size: 27px;
+    font-weight: bold;
+    position: relative;
+    top: 35px;
+    left: 15px;
+}
+
+aside h3 {
+    font-size: 30px;
+    margin-top: 150px;
+}
+
+aside ul {list-style: none}
+
+aside ul li {
+    color: #fff;
+    display: block;
+    margin-top: 20px;
+    transition: transform .6s ease;
+}
+
+aside ul li:hover, aside ul a:hover {
+    color: #eb5959;
+    text-decoration: none;
+    transform: scale(1.05);
+}
+
+.clearfix .calendar {
+  display: flex;
+  align-items: center;
+  width: auto;
+  height: 9in;
+  min-width: 700px;
+  font-size: 13px;
+}
+
+.calendar tr, .calendar td {
+  border: 2px solid black;
+}
+
+.calendar th {
+  padding: 10px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.calendar td {
+  width: 200px;
+  height: 120px;
+  padding: 20px 0px 0px 5px;
+}
+
+.month {
+  font-size: 25px;
+}
+
+.date {
+  font-size: 16px;
+}
+
+.calendar ul {
+  height: 100%;
+  padding: 0px 5px 0px 20px;
+}
+
+.calendar a {
+  color: #17a2b8;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.btn {
+  outline: none;
+  color: black;
+  background-color: transparent;
+  box-shadow: 0 0 0 0;
+}
+
+.calendar .clearfix {
+  margin: 15px;
+}
+

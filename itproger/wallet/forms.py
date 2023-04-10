@@ -1,5 +1,7 @@
 from django.contrib.auth.forms import UserCreationForm
 from django import forms
+from django.core.exceptions import ValidationError
+
 from .models import *
 
 
@@ -27,3 +29,10 @@ class ProfileRegistration(forms.ModelForm):
     class Meta:
         model = Profile
         fields = ('money',)
+
+
+class ProfileCalendar(forms.ModelForm):
+
+    class Meta:
+        model = Event
+        fields = ('title', 'description', 'earn', 'spend')
