@@ -17,7 +17,7 @@
 			<ul>
 				<a href="{% url 'home' %}"><li><i class="fas fa-home"></i> Главная</li>
 				<a href="{% url 'we' %}"><li><i class="fas fa-search"></i> Обо мне</li></a>
-				<a href="#"><li><i class="fas fa-duotone fa-calendar"></i> Календарь</li></a>
+				<a href="{% url 'calendar' %}"><li><i class="fas fa-duotone fa-calendar"></i> Календарь</li></a>
 				<a href="#"><li><i class="fas fa-regular fa-thumbtack"></i> Цели</li></a></a>
             </ul>
 		</aside>
@@ -26,5 +26,6 @@
             {% endblock %}
 		</main>
 	</div>
+	<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 </body>
 </html>
