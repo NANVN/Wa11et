@@ -19,6 +19,9 @@ aside {
 }
 
 aside img{
+    margin-top: 45px;
+	margin-bottom: 65px;
+	width: 250px;
     max-width: 100%;
     height: auto
     object-fit: cover;
