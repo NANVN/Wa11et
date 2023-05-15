@@ -1,9 +1,15 @@
-{% extends 'wallet/baseCalendar.html' %}
+
+{% extends 'wallet/layout.html' %}
+{% block title %}Календарь{% endblock %}
+
+{% block extra_head %}
+
+{% endblock %}
 
 {% block content %}
     <div class="clearfix">
         {{ calendar }}
         <a class="btn btn-info left" href="{% url 'calendar' %}?{{ prev_month }}"> Previous Month </a>
-        <a class="btn btn-info right" href="{% url 'calendar' %}?{{ next_month }}"> Next Month </a>
+        <a class="btn btn-outline-info right" href="{% url 'calendar' %}?{{ next_month }}"> Next Month </a>
     </div>
 {% endblock %}

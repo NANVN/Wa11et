@@ -2,66 +2,11 @@ html, body {
     height: 100%;
 }
 
-aside {
-	display: flex;
-	float: left;
-	width: 20%;
-	height: 100vh;
-	flex-direction: column;
-	justify-content: flex-start;
-	align-items: center;
-	background: linear-gradient(180deg, #56B4D3, #348F50);
-}
-
-aside img{
-    max-width: 100%;
-    height: auto
-    object-fit: cover;
-    object-position: bottom;
-    text-align: center;
-}
-
-
-aside ul {
-	list-style: none;
-	padding: 0;
-	margin: 0;
-	text-align: center;
-}
-
-aside a {
-	display: block;
-	margin: 15px;
-	width: auto;
-	height: 55px;
-	background-color: transparent;
-	color: #FFF;
-
-	text-align: left;
-	font-size: 1.5em;
-	font-family: 'Montserrat', sans-serif;
-
-	cursor: pointer;
-	transition: background-color 0.3s ease-in-out;
-	transition: color 0.3s ease-in-out;
-	text-decoration: none;
-}
-
-aside ul li {
-	transition: transform .4s ease;
-}
-
-aside ul li:hover, aside ul a:hover {
-    color: #404040;
-    text-decoration: none;
-    transform: scale(1.05);
-}
-
 .clearfix .calendar {
+  margin-top: 20px;
   display: flex;
   align-items: center;
   width: auto;
-  height: 9in;
   min-width: 700px;
   font-size: 13px;
 }
@@ -78,7 +23,7 @@ aside ul li:hover, aside ul a:hover {
 
 .calendar td {
   width: 200px;
-  height: 120px;
+  height: 100px;
   padding: 20px 0px 0px 5px;
 }
 
@@ -108,13 +53,7 @@ aside ul li:hover, aside ul a:hover {
 }
 
 .btn {
-  outline: none;
   color: black;
   background-color: transparent;
   box-shadow: 0 0 0 0;
 }
-
-.calendar .clearfix {
-  margin: 15px;
-}
-

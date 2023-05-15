@@ -6,6 +6,6 @@ urlpatterns = [
     path('home/', main, name='home'),
     path('signout/', signout, name='logout'),
     path('about/', about, name='we'),
-    path('calendar/', calendar, name='calendar'),
+    path('calendar/', CalendarView.as_view(), name='calendar'),
     path('goals/', goals)
 ]
