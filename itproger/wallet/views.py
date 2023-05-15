@@ -12,7 +12,7 @@ import calendar
 
 def account(request):
     if request.user.is_authenticated:
-        return redirect('/home')
+        return redirect('/about')
     if request.method == 'POST':
         if 'password2' in request.POST:
             user_form_1 = UserRegistration(request.POST)
@@ -23,12 +23,12 @@ def account(request):
                 Profile.objects.create(user=prof.user, money=0)
                 user = authenticate(request, username=request.POST['username'], password=request.POST['password1'])
                 login(request, user)
-                return redirect('/home')
+                return redirect('/about')
         else:
             user = authenticate(request, username=request.POST['username'], password=request.POST['password'])
             if user is not None:
                 login(request, user)
-                return redirect('/home')
+                return redirect('/about')
     user_form_1 = UserRegistration()
     user_form_2 = UserAuthorization()
     return render(request, 'wallet/profile.html', {'user_form_1': user_form_1, 'user_form_2': user_form_2})
@@ -82,7 +82,5 @@ def get_date(req_day):
 
 def goals(request):
     return render(request, 'wallet/about.html', {'title': 'Цели'})
-
-
 def main(request):
-    return render(request, 'wallet/index.html', {'title': 'Главная'})
+    return render(request, 'wallet/about.html', {'title': 'Цели'})
